@@ -1,43 +1,37 @@
+var time = ['10am: ' + '11am: ' + '12pm: ' + '1pm: ' + '2pm: ' + '3pm: ' + '4pm: ' + '5pm: '];
 var pikePlace = {
   minCustHr: 17,
   maxCustHr: 88,
-  avgCookiesPerHr: 5.2,
-  hourlyTotals: [],
+  avgCookiesPerCust: 5.2,
+  hourlyTotal: [],
   dailyTotal: [],
   randCustHour: function() {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
   },
+
   cookiesPerHour: function() {
-    for (var i = 0; i < 8; i++) {
-    this.hourlyTotals.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
-    console.log(this.hourlyTotals);
+    for (var i = 0; i < time.length; i++) {
+    this.hourlyTotal.push(Math.floor(this.randCustHour() * this.avgCookiesPerCust));
   }
   }
-  cookiesPerDay: function() {
-    var totals = [];
-    for(var i = 0; i < hourlyTotals.length; i++) {
-      dailyTotal += totals[i];
-    }
-    return this.totals;
-  }
-  //return Math.floor(this.cookiesPerHour[i]);
-    // calculate your individual hourly totals
-    // this will involve a 'for' loop to populate the hourlyTotals array
-    // you could also go ahead and calculate your daily total here, too
+  var hour = document.createElement('ul');
+  this.hourlyTotal += this.dailyTotal[i];
+  hour.innerHTML = hour[i] + this.dailyTotal[i];
+  this.domID.appendChild(hour);
 
-  display: function() {
-//hard-code hours, append the hourly totals to each, make total appear at the bottom
+  var hour = document.createElement('ul');
+  hour.innerHTML = 'Total: ' + this.dailyTotal;
+  this.domID.appendChild(hour);
+ }
 
 
-    /*var nextStore = document.createElement('li');
-    nextStore.innerHTML = ques[i][0];
-    document.body.appendChild(nextStore);*/
-    // this method will read through the array and put it in the HTML document
-    // as an intermediate step, just console.log() the individual values
-  }
-};
 pikePlace.cookiesPerHour();
+    var hour = document.createElement('ul');
+    this.hourlyTotal += this.dailyTotal[i];
+    hour.innerHTML = hour[i] + this.dailyTotal[i];
+    this.domID.appendChild(hour);
+
 
 var seatac = {
   minCustHr: 6,
@@ -49,33 +43,21 @@ var seatac = {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
   },
+  var time = ['10am-- ' + '11am-- ' + '12pm-- ' + '1pm-- ' + '2pm-- ' + '3pm-- ' + '4pm-- ' + '5pm-- '];
   cookiesPerHour: function() {
-    for (var i = 0; i < 8; i++) {
-    this.hourlyTotals.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
-    console.log(this.hourlyTotals);
+    for (var i = 0; i < time.length; i++) {
+    this.hourlyTotal.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
+    console.log(this.hourlyTotal);
   }
   }
-  cookiesPerDay: function() {
-    var totals = [];
-    for(var i = 0; i < hourlyTotals.length; i++) {
-      dailyTotal += totals[i];
-    }
-    return this.totals;
+    var hour = document.createElement('ul');
+    this.hourlyTotal += this.dailyTotal[i];
+    hour.innerHTML = time[i] + this.dailyTotal[i];
+    this.domID.appendChild(hour);
   }
-  //return Math.floor(this.cookiesPerHour[i]);
-    // calculate your individual hourly totals
-    // this will involve a 'for' loop to populate the hourlyTotals array
-    // you could also go ahead and calculate your daily total here, too
-
-  display: function() {
-//hard-code hours, append the hourly totals to each, make total appear at the bottom
-
-
-    /*var nextStore = document.createElement('li');
-    nextStore.innerHTML = ques[i][0];
-    document.body.appendChild(nextStore);*/
-    // this method will read through the array and put it in the HTML document
-    // as an intermediate step, just console.log() the individual values
+  var hour = document.createElement('ul');
+  hour.innerHTML = 'Total -- ' + this.dailyTotal;
+  this.domID.appendChild(hour);
   }
 };
 seatac.cookiesPerHour();
@@ -90,35 +72,24 @@ var southcenter = {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
   },
+  var time = ['10am-- ' + '11am-- ' + '12pm-- ' + '1pm-- ' + '2pm-- ' + '3pm-- ' + '4pm-- ' + '5pm-- '];
   cookiesPerHour: function() {
-    for (var i = 0; i < 8; i++) {
-    this.hourlyTotals.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
-    console.log(this.hourlyTotals);
+    for (var i = 0; i < time.length; i++) {
+    this.hourlyTotal.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
+    console.log(this.hourlyTotal);
   }
   }
-  cookiesPerDay: function() {
-    var totals = [];
-    for(var i = 0; i < hourlyTotals.length; i++) {
-      dailyTotal += totals[i];
-    }
-    return this.totals;
+    var hour = document.createElement('ul');
+    this.hourlyTotal += this.dailyTotal[i];
+    hour.innerHTML = time[i] + this.dailyTotal[i];
+    this.domID.appendChild(hour);
   }
-  //return Math.floor(this.cookiesPerHour[i]);
-    // calculate your individual hourly totals
-    // this will involve a 'for' loop to populate the hourlyTotals array
-    // you could also go ahead and calculate your daily total here, too
-
-  display: function() {
-//hard-code hours, append the hourly totals to each, make total appear at the bottom
-
-
-    /*var nextStore = document.createElement('li');
-    nextStore.innerHTML = ques[i][0];
-    document.body.appendChild(nextStore);*/
-    // this method will read through the array and put it in the HTML document
-    // as an intermediate step, just console.log() the individual values
+  var hour = document.createElement('ul');
+  hour.innerHTML = 'Total -- ' + this.dailyTotal;
+  this.domID.appendChild(hour);
   }
 };
+
 southcenter.cookiesPerHour();
 
 var bellevueSquare = {
@@ -131,35 +102,24 @@ var bellevueSquare = {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
   },
+  var time = ['10am-- ' + '11am-- ' + '12pm-- ' + '1pm-- ' + '2pm-- ' + '3pm-- ' + '4pm-- ' + '5pm-- '];
   cookiesPerHour: function() {
-    for (var i = 0; i < 8; i++) {
-    this.hourlyTotals.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
-    console.log(this.hourlyTotals);
+    for (var i = 0; i < time.length; i++) {
+    this.hourlyTotal.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
+    console.log(this.hourlyTotal);
   }
   }
-  cookiesPerDay: function() {
-    var totals = [];
-    for(var i = 0; i < hourlyTotals.length; i++) {
-      dailyTotal += totals[i];
-    }
-    return this.totals;
+    var hour = document.createElement('ul');
+    this.hourlyTotal += this.dailyTotal[i];
+    hour.innerHTML = time[i] + this.dailyTotal[i];
+    this.domID.appendChild(hour);
   }
-  //return Math.floor(this.cookiesPerHour[i]);
-    // calculate your individual hourly totals
-    // this will involve a 'for' loop to populate the hourlyTotals array
-    // you could also go ahead and calculate your daily total here, too
-
-  display: function() {
-//hard-code hours, append the hourly totals to each, make total appear at the bottom
-
-
-    /*var nextStore = document.createElement('li');
-    nextStore.innerHTML = ques[i][0];
-    document.body.appendChild(nextStore);*/
-    // this method will read through the array and put it in the HTML document
-    // as an intermediate step, just console.log() the individual values
+  var hour = document.createElement('ul');
+  hour.innerHTML = 'Total -- ' + this.dailyTotal;
+  this.domID.appendChild(hour);
   }
 };
+
 bellevueSquare.cookiesPerHour();
 
 var alki = {
@@ -172,33 +132,22 @@ var alki = {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
   },
+  var time = ['10am-- ' + '11am-- ' + '12pm-- ' + '1pm-- ' + '2pm-- ' + '3pm-- ' + '4pm-- ' + '5pm-- '];
   cookiesPerHour: function() {
-    for (var i = 0; i < 8; i++) {
-    this.hourlyTotals.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
-    console.log(this.hourlyTotals);
+    for (var i = 0; i < time.length; i++) {
+    this.hourlyTotal.push(Math.floor(this.randCustHour() * this.avgCookiesPerHr));
+    console.log(this.hourlyTotal);
   }
   }
-  cookiesPerDay: function() {
-    var totals = [];
-    for(var i = 0; i < hourlyTotals.length; i++) {
-      dailyTotal += totals[i];
-    }
-    return this.totals;
+    var hour = document.createElement('ul');
+    this.hourlyTotal += this.dailyTotal[i];
+    hour.innerHTML = time[i] + this.dailyTotal[i];
+    this.domID.appendChild(hour);
   }
-  //return Math.floor(this.cookiesPerHour[i]);
-    // calculate your individual hourly totals
-    // this will involve a 'for' loop to populate the hourlyTotals array
-    // you could also go ahead and calculate your daily total here, too
-
-  display: function() {
-//hard-code hours, append the hourly totals to each, make total appear at the bottom
-
-
-    /*var nextStore = document.createElement('li');
-    nextStore.innerHTML = ques[i][0];
-    document.body.appendChild(nextStore);*/
-    // this method will read through the array and put it in the HTML document
-    // as an intermediate step, just console.log() the individual values
+  var hour = document.createElement('ul');
+  hour.innerHTML = 'Total -- ' + this.dailyTotal;
+  this.domID.appendChild(hour);
   }
 };
+
 alki.cookiesPerHour();
