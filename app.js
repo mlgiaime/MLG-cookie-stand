@@ -1,4 +1,4 @@
-var time = ['Location', '10am: ' , '11am: ' , '12pm: ' , '1pm: ' , '2pm: ' , '3pm: ' , '4pm: ' , '5pm: ' , 'Total'];
+var time = ['Location', '10am ' , '11am ' , '12pm ' , '1pm ' , '2pm ' , '3pm ' , '4pm ' , '5pm ' , 'Total'];
 var pikePlace = {
   location: 'Pike Place',
   minCustHr: 17,
@@ -6,11 +6,6 @@ var pikePlace = {
   avgCookiesPerCust: 5.2,
   hourlyTotal: [],
   dailyTotal: 0,
-
-  /*randCustHour: function() {
-    return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
-    console.log(randCustHour());
-  },*/
 
  randCustHour: function() {
     var result = Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
@@ -20,7 +15,7 @@ var pikePlace = {
 
   cookieTotal: function() {
     for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
+      var hourly = this.randCustHour() * this.avgCookiesPerCust;
       this.hourlyTotal.push(Math.floor(hourly));
       this.dailyTotal += this.hourlyTotal[i];
       console.log(this.dailyTotal);
@@ -50,11 +45,6 @@ var pikePlace = {
       tdElement.textContent = this.hourlyTotal[i];
       trElement.appendChild(tdElement);
     }
-    var trElement = document.createElement('tr');
-    var tdElement = document.createElement('td');
-    tdElement.textContent = this.location;
-    trElement.appendChild(tdElement);
-    createTable.appendChild(trElement);
 
     var trElement = document.createElement('tr');
     var tdElement = document.createElement('td');
@@ -69,41 +59,32 @@ pikePlace.display();
 
 
 var seatac = {
-  location: seatac,
+  location: 'Seatac',
   minCustHr: 6,
   maxCustHr: 44,
-  avgCookiesPerHr: 1.2,
-  hourlyTotals: [],
+  avgCookiesPerCust: 1.2,
+  hourlyTotal: [],
   dailyTotal: 0,
 
-  /*randCustHour: function() {
+  randCustHour: function() {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
   },
-*/
+
   randCustHour: function() {
     var result = Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(result);
     return result;
   },
 
-  /*cookieTotal: function() {
-    for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
-      this.hourlyTotal.push(Math.floor(hourly));
-      this.dailyTotal += this.hourlyTotal[i];
-      console.log(this.dailyTotal);
-    }
-  },*/
   cookieTotal: function() {
     for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
+      var hourly = this.randCustHour() * this.avgCookiesPerCust;
       this.hourlyTotal.push(Math.floor(hourly));
       this.dailyTotal += this.hourlyTotal[i];
       console.log(this.dailyTotal);
     }
   },
-
 
   display: function() {
     this.cookieTotal();
@@ -148,31 +129,19 @@ var southcenter = {
   location: southcenter,
   minCustHr: 11,
   maxCustHr: 38,
-  avgCookiesPerHr: 1.9,
-  hourlyTotals: [],
+  avgCookiesPerCust: 1.9,
+  hourlyTotal: [],
   dailyTotal: 0,
-  /*randCustHour: function() {
-    return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
-    console.log(randCustHour());
-  },*/
+
   randCustHour: function() {
     var result = Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(result);
     return result;
   },
 
-  /*cookieTotal: function() {
-    for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
-      this.hourlyTotal.push(Math.floor(hourly));
-      this.dailyTotal += this.hourlyTotal[i];
-      console.log(this.dailyTotal);
-    }
-  },*/
-
   cookieTotal: function() {
     for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
+      var hourly = this.randCustHour() * this.avgCookiesPerCust;
       this.hourlyTotal.push(Math.floor(hourly));
       this.dailyTotal += this.hourlyTotal[i];
       console.log(this.dailyTotal);
@@ -223,31 +192,22 @@ var bellevueSquare = {
   location: bellevueSquare,
   minCustHr: 20,
   maxCustHr: 48,
-  avgCookiesPerHr: 3.3,
-  hourlyTotals: [],
+  avgCookiesPerCust: 3.3,
+  hourlyTotal: [],
   dailyTotal: 0,
-  /*randCustHour: function() {
+  randCustHour: function() {
     return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(randCustHour());
-  },*/
+  },
   randCustHour: function() {
     var result = Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(result);
     return result;
   },
 
-  /*cookieTotal: function() {
-    for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
-      this.hourlyTotal.push(Math.floor(hourly));
-      this.dailyTotal += this.hourlyTotal[i];
-      console.log(this.dailyTotal);
-    }
-  },*/
-
   cookieTotal: function() {
     for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
+      var hourly = this.randCustHour() * this.avgCookiesPerCust;
       this.hourlyTotal.push(Math.floor(hourly));
       this.dailyTotal += this.hourlyTotal[i];
       console.log(this.dailyTotal);
@@ -297,31 +257,19 @@ var alki = {
   location: alki,
   minCustHr: 3,
   maxCustHr: 24,
-  avgCookiesPerHr: 2.6,
-  hourlyTotals: [],
+  avgCookiesPerCust: 2.6,
+  hourlyTotal: [],
   dailyTotal: 0,
-  /*randCustHour: function() {
-    return Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
-    console.log(randCustHour());
-  },*/
+
   randCustHour: function() {
     var result = Math.floor(Math.random() * (this.maxCustHr - this.minCustHr + 1)) + this.minCustHr;
     console.log(result);
     return result;
   },
 
-  /*cookieTotal: function() {
-    for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
-      this.hourlyTotal.push(Math.floor(hourly));
-      this.dailyTotal += this.hourlyTotal[i];
-      console.log(this.dailyTotal);
-    }
-  },*/
-
   cookieTotal: function() {
     for (var i = 0; i < time.length; i++) {
-      var hourly = this.randCustHour() * this.avgCookiesPerCus;
+      var hourly = this.randCustHour() * this.avgCookiesPerCust;
       this.hourlyTotal.push(Math.floor(hourly));
       this.dailyTotal += this.hourlyTotal[i];
       console.log(this.dailyTotal);
@@ -365,4 +313,4 @@ var alki = {
   },
 };
 
-alki.display();
+ alki.display();
