@@ -1,9 +1,11 @@
 html {
-
+  margin: 100px;
+  background-color: #ffc9bc;
 }
 
 body {
-
+  padding: 60px;
+  background-color: #AABBCC;
 }
 
 #slogan {
@@ -11,6 +13,8 @@ body {
 }
 
 #stores {
+  border: 80px;
+  background-color: #D2C4E8;
 
 }
 
@@ -23,7 +27,7 @@ fieldset {
 }
 
 table {
-
+  background-color: #c9ffc9;
 }
 
 legend {
@@ -37,8 +41,3 @@ label {
 input {
 
 }
-
-.textbox {
-
-}
-
