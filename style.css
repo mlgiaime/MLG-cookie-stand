@@ -1,73 +1,44 @@
-p {
-  font-family: georgia;
-  font-style: serif;
-  color: #7AB099;
-}
+html {
 
-li {
-  font-family: helvetica;
-  font-style: sans serif;
-  font-weight: bold;
-  color: white;
-  text-decoration: underline;
 }
 
 body {
-  background-color: #a7c6b8;
+
 }
 
 #slogan {
-  font-family: 'Lora', serif;
-  text-align: center;
-  font-size: 36px;
-}
-
-li > ul {
-  text-align: left, justify;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
 
 }
 
-#pike {
-  font-family: arial;
-  font-style: sans serif;
-  background-color: #598a72;
-}
+#stores {
 
-#total {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
-  background-color: #022e19;
-  color: green;
 }
 
 img {
-  position: left;
+
 }
 
-#seatac {
-  font-family: arial;
-  font-style: sans serif;
-  background-color: #40785d;
+fieldset {
+
 }
 
-#southcenter {
-  font-family: arial;
-  font-style: sans serif;
-  background-color: #1d5b3d;
+table {
+
 }
 
-#bellsquare {
-  font-family: arial;
-  font-style: sans serif;
-  background-color: #0d482c;
+legend {
+
 }
 
-#alki {
-  font-family: arial;
-  font-style: sans serif;
-  background-color: #083a22;
+label {
+
+}
+
+input {
+
+}
+
+.textbox {
+
 }
 
