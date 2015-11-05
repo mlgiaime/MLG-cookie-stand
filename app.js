@@ -4,9 +4,12 @@ var time = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
 var allShops = [];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //constructor function for all salmon cookie stores
 =======
 >>>>>>> cookie-wed
+=======
+>>>>>>> 3715cabbadf8b6164f967eeec01e250d03e1c2ed
 function CookieStand(location, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
   this.location = location;
   this.minCustPerHour = minCustPerHour;
@@ -96,7 +99,10 @@ function makeTable() {
   //data generated with this javascript to the webpage
 =======
 
+<<<<<<< HEAD
 >>>>>>> cookie-wed
+=======
+>>>>>>> 3715cabbadf8b6164f967eeec01e250d03e1c2ed
   document.getElementById('table').appendChild(table);
 }
 
