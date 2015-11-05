@@ -5,3 +5,6 @@ Tuesday 11/3/15 -- Peer-programming
 Partner: Michael Sullivan
 We helped each other on the coding as we were both dealing with major bugs from Monday 11/2/15. Most bugs have been solved.
 
+Wednesday 11/4/15 -- Peer-programming
+Partner: Dan Schwartz
+I received a considerable amount of help/tutoring from Dan followed by myself driving for his html form while I was navigator and he was driver for mine while I was navigator.
