@@ -3,44 +3,32 @@
 var time = ['10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm'];
 var allShops = [];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 //constructor function for all salmon cookie stores
-=======
->>>>>>> cookie-wed
-=======
->>>>>>> 3715cabbadf8b6164f967eeec01e250d03e1c2ed
 function CookieStand(location, minCustPerHour, maxCustPerHour, avgCookiesPerCust) {
   this.location = location;
   this.minCustPerHour = minCustPerHour;
   this.maxCustPerHour = maxCustPerHour;
   this.avgCookiesPerCust = avgCookiesPerCust;
-  this.totalCookies = [];
+  this.totalHourlyCookieSales = [];
   this.total = 0;
   allShops.push(this);
 
   //calculates random number of customers per hour between the provided min and max of customer per hour
   this.custPerHour = function() {
     return Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour)) + this.minCustPerHour;
-  };
+  }
 
   //uses result of the custPerHour function and the provided average cookies
   //per customer to calculate how many cookies are sold each hour of operation
   this.cookiesPerHour = function() {
     for (var i = 0; i < time.length; i++) {
       var hourlyTotal = Math.floor(this.custPerHour() * this.avgCookiesPerCust);
-      this.totalCookies.push(hourlyTotal);
-      this.total += this.totalCookies[i];
-    };
-  };
+      this.totalHourlyCookieSales.push(hourlyTotal);
+      this.total += this.totalHourlyCookieSales[i];
+    }
+  }
 }
 
-//info provided for base constructor function
-var pikePlace = new CookieStand('Pike Place', 17, 88, 5.2);
-var seatac = new CookieStand('Seatac', 6, 44, 1.2);
-var southcenter = new CookieStand('Southcenter', 11, 38, 1.9);
-var bellSquare = new CookieStand('Bellevue Square', 20, 48, 3.3);
-var alki = new CookieStand('Alki', 3, 24, 2.6);
 
 
 //this function calculates the total number of cookies sold at each location
@@ -48,7 +36,8 @@ var alki = new CookieStand('Alki', 3, 24, 2.6);
 function giveData() {
   for (var c = 0; c < allShops.length; c++) {
     allShops[c].cookiesPerHour();
-    console.log(allShops[c].totalCookies);
+    console.log(allShops[c].totalHourlyCookieSales
+      );
   };
 }
 
@@ -84,7 +73,7 @@ function makeTable() {
     //this loop populates the hourly total cookie sales in the table
     for (var b = 0; b < time.length; b++) {
       var tb = document.createElement('td');
-      tb.innerHTML = allShops[a].totalCookies[b];
+      tb.innerHTML = allShops[a].totalHourlyCookieSales[b];
       tr.appendChild(tb);
     }
     //this makes the final table column and displays the cumulative total
@@ -94,32 +83,29 @@ function makeTable() {
     tr.appendChild(dailyTotal);
     table.appendChild(tr);
   }
-<<<<<<< HEAD
+
   //accesses the HTML file and the element named 'table' and sends the table
   //data generated with this javascript to the webpage
-=======
 
-<<<<<<< HEAD
->>>>>>> cookie-wed
-=======
->>>>>>> 3715cabbadf8b6164f967eeec01e250d03e1c2ed
   document.getElementById('table').appendChild(table);
 }
 
-//call your functions, homeslice
+//info provided for base constructor function
+var pikePlace = new CookieStand('Pike Place', 17, 88, 5.2);
+var seatac = new CookieStand('Seatac', 6, 44, 1.2);
+var southcenter = new CookieStand('Southcenter', 11, 38, 1.9);
+var bellSquare = new CookieStand('Bellevue Square', 20, 48, 3.3);
+var alki = new CookieStand('Alki', 3, 24, 2.6);
+
+//CALL YO FUNCTIONS, HOMESLICE!
 giveData();
 makeTable();
 
+//Attempting event listeners
+// document.getElementById('stores').addEventListener('click')
 
-//document.getElementById("myBtn").addEventListener("click", displayDate);
-// function displayDate() {
-//     document.getElementById("demo").innerHTML = Date();
+// function appendNewStore() {
+//   var addInput = document.getElementById('input');
+//   form.oninput
 // }
-
-document.getElementById('stores').addEventListener('click')
-
-function appendNewStore() {
-  var addInput = document.getElementById('input');
-  form.oninput
-}
 
