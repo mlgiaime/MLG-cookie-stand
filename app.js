@@ -11,7 +11,7 @@ function CookieStand(location, minCustPerHour, maxCustPerHour, avgCookiesPerCust
   this.total = 0;
   allShops.push(this);
 
-   this.custPerHour = function() {
+  this.custPerHour = function() {
     return Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour)) + this.minCustPerHour;
   }
 
@@ -67,6 +67,17 @@ function makeTable() {
   document.getElementById('table').appendChild(table);
 }
 
+function appendNewStore() {
+  var name = document.getElementsByName('shopID')[0].value;
+  var minCust = document.getElementsByName('minCustPerHour')[0].value;
+  var maxCust = document.getElementsByName('maxCustPerHour')[0].value;
+  var avgCookiesPerCust = document.getElementsByName('avgCookiesPerCust')[0].value;
+  var newStore = new CookieStand(name, minCust, maxCust, avgCookiesPerCust);
+  document.getElementById('table').childNodes[0].remove();
+  giveData();
+  makeTable();
+}
+
 var pikePlace = new CookieStand('Pike Place', 17, 88, 5.2);
 var seatac = new CookieStand('Seatac', 6, 44, 1.2);
 var southcenter = new CookieStand('Southcenter', 11, 38, 1.9);
@@ -76,19 +87,4 @@ var alki = new CookieStand('Alki', 3, 24, 2.6);
 giveData();
 makeTable();
 
-
-
-Attempting event listeners
-// var updateStores = document.getElementById('update');
-// updateStores.addEventListener('submit', updateStores);
-
-//function appendNewStore(){}
-
-
-// document.getElementById('stores').addEventListener('click')
-
-// function appendNewStore() {
-//   var addInput = document.getElementById('input');
-//   form.oninput
-// }
-
+document.getElementById('submit').addEventListener('click',appendNewStore);
