@@ -8,3 +8,5 @@ We helped each other on the coding as we were both dealing with major bugs from 
 Wednesday 11/4/15 -- Peer-programming
 Partner: Dan Schwartz
 I received a considerable amount of help/tutoring from Dan followed by myself driving for his html form while I was navigator and he was driver for mine while I was navigator.
+
+Thursday 11/5/15 -- Client-facing salmon cookie webpage created. CSS is still in progress. JS now has a table that will populate user input into the table after clicking a button.
