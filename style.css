@@ -1,5 +1,5 @@
 html {
-  margin: 100px;
+  margin: 30px;
   background-color: #ffc9bc;
 }
 
@@ -8,36 +8,11 @@ body {
   background-color: #AABBCC;
 }
 
-#slogan {
-
-}
-
 #stores {
   border: 80px;
   background-color: #D2C4E8;
-
-}
-
-img {
-
-}
-
-fieldset {
-
 }
 
 table {
   background-color: #c9ffc9;
-}
-
-legend {
-
-}
-
-label {
-
-}
-
-input {
-
 }
