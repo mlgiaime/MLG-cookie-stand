@@ -1,18 +1,80 @@
-html {
-  margin: 30px;
-  background-color: #ffc9bc;
-}
-
 body {
-  padding: 60px;
-  background-color: #AABBCC;
+  background-image: url("images/seattle.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#stores {
-  border: 80px;
-  background-color: #D2C4E8;
+fieldset {
+  border: 30px;
+  border-color: black;
+  background-color: #757575;
+  height: auto;
+  width: auto;
+  color: white;
+}
+
+table, th, td {
+   border: 1px solid black;
 }
 
 table {
   background-color: #c9ffc9;
+  border: 2px solid black;
+  border-width: 3px;
+  border-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
+
+#stores {
+  border: 30px;
+  border-color: black;
+  background-color: #757575;
+  width: auto;
+  font-size: 18px;
+  font-family: Lora sans serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slogan {
+  font-size: 35px;
+  margin-top: 30px;
+  font-style: oblique;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px #7a7a7a;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+button {
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+  width:200px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+legend {
+  padding-bottom: 20px;
+}
+
+
