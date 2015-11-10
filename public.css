@@ -1,6 +1,4 @@
 body {
-  line-height: 1.6;
-  font-weight: 400;
   font-family: Lora sans-serif;
   background-image: url("images/seattle.jpeg");
   background-repeat: no-repeat;
@@ -14,131 +12,34 @@ body {
   font-style: bold;
   font-size: 50px;
   text-align: center;
-  margin: 20px;
-  padding: 10px;
-  width: 1200px;
-  height: 50px;
 }
 
 #slogan {
   font-size: 35px;
-  margin-top: 30px;
   font-style: oblique;
   font-weight: bold;
   text-align: center;
-  text-shadow: 2px 2px #7a7a7a;
-  left: 220px;
-  position: absolute;
 }
 
 #merchpic {
-  position: relative;
-  float: left;
   height: 250px;
   width: 300px;
-  margin: 30px;
-  border-width: 10px;
-  border-radius: 30px;
-  border-color: gray;
-  top: 200px;
-  left: 200px;
 }
 
 #cookie {
-  position: relative;
-  float: right;
   height: 250px;
   width: 300px;
-  margin: 30px;
-  border-width: 10px;
-  border-radius: 30px;
-  border-color: gray;
-  right:200px;
-  top: 200px;
 }
-
-/*#tstory, #tmerch {
-  margin: 15px;
-  float: left;
-  position: relative;
-  font-size: 20px;
-  box-shadow: 7px 7px 7px black;
-  text-align: center;
-  border: 3px solid #696969;
-  background-color: rgba(120, 120, 120, 0.75);
-  padding: 10px;
-  box-shadow: 5px 5px 5px black;
-  left: 30px;
-  top: 100px;
-}*/
 
 #story, #merch {
-  border: 3px solid #696969;
-  width: 550px;
-  background-color: rgba(120, 120, 120, 0.75);
-  padding: 10px;
-  background-position: auto;
-  position: relative;
-  box-shadow: 5px 5px 5px black;
-  margin: 15px;
+  background-color: rgba(120, 120, 120, 0.65);
   text-align: center;
-  left: 30px;
-  top: 110px;
-}
-
-figcaption {
-  text-align: center;
-  background-color: rgba(120,120,120,.8);
-  box-shadow: 5px 5px 5px black;
-  border-width: 10px;
-  position: relative;
-  margin: 100px;
-  left: 400px;
-  top: relative;
-  right: 400px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-  font-style: italic;
 }
 
 #mainfish {
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-
-#locations {
-  border: 3px solid #696969;
-  height: 335px;
-  width: 250px;
-  background-color: rgba(120, 120, 120, 0.75);
-  padding: 10px;
-  background-position: auto;
-  position: relative;
-  right:50px;
-  top: 50px;
-  float: right;
-  box-shadow: 5px 5px 5px black;
-  margin: 15px;
-  text-align: center;
-}
-
-#festivals {
-  position: absolute;
-  right: 50px;
-  top: 800px;
-  border: 3px solid #696969;
-  height: 400px;
-  width: 250px;
-  margin: 15px;
-  background-color: rgba(110, 110, 110, 0.75);
-  padding: 10px;
-  box-shadow: 5px 5px 5px black;
-  float: right;
-  text-align: center;
 }
 
 .salmon {
@@ -150,28 +51,15 @@ a {
 #creepy {
   position: relative;
   height: 500px;
-  width: 600px;
-  border-width: 10px;
-  border-radius: 30px;
-  border-color: gray;
-  border-radius: 30px;
-  top: 300px;
-  left: 125px;
+  width: 700px;
 }
 
 footer {
   font-style: bold;
-  margin: 20px;
-  border: 3px solid #696969;
   height: 25px;
-  width: 1200px;
   background-color: rgba(120, 120, 120, 0.75);
-  padding: 10px;
-  box-shadow: 2px 2px 2px black;
   text-align: center;
   text-decoration: underline;
-  position: relative;
-  top: 600px;
 }
 
 #swimmer {
