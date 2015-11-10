@@ -1,13 +1,65 @@
 body {
-  font-family: Lora sans-serif;
+  font-family: "Lora sans-serif";
   background-image: url("images/seattle.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  margin: auto;
+  background-color: #DDDDDD;
+  padding: 30px;
+} 
+
+#family_title_line {
+  text-align: center;
+  margin: auto;
+  background-color: #DDDDDD;
+  padding: 5px;
+  font-size: 25px;
+} 
+
+img {
+  margin:auto;
+  width: 50%;
+}
+
+#locations {
+  text-align: center;
+  /*margin: auto */
+  background-color: #DDDDDD;
+  background-opacity: .2;
+  width: 30%;
+  position: absolute;
+  right: 0px;
+  top: 340px;
+}
+
+#salmon_festivals_sidebar{
+  text-align: center;
+  /*margin: auto */
+  background-color: #DDDDDD;
+  background-opacity: .2;
+  width: 30%;
+  position: absolute;
+  right: 0px;
+  top: 825px;
+}
+
+#Ocean_Science_Links{
+  position:absolute;
+  left:1%;
+  bottom: -550px;
+  width:990px;
+  margin:auto;
+  z-index:1;
 }
 
 #head {
-  font-family: Josephin sans-serif;
+  font-family: "Josephin sans-serif";
   font-weight: 500;
   font-style: bold;
   font-size: 50px;
@@ -22,18 +74,25 @@ body {
 }
 
 #merchpic {
-  height: 250px;
-  width: 300px;
+  width: 900px;
+  position:absolute;
+  left:30%;
+  top: 1250px;
 }
 
 #cookie {
   height: 250px;
-  width: 300px;
+  width: 500px;
+  position:absolute;
+  top: 35%;
+  left: 32.5%;
 }
+
 
 #story, #merch {
   background-color: rgba(120, 120, 120, 0.65);
   text-align: center;
+  width: 200px;
 }
 
 #mainfish {
@@ -49,17 +108,20 @@ body {
 }
 
 #creepy {
-  position: relative;
-  height: 500px;
-  width: 700px;
+  position: absolute;
+  left: 10px;
+  top: 99%;
+  margin:auto;
+  width: 1000px;
 }
 
 footer {
   font-style: bold;
   height: 25px;
-  background-color: rgba(120, 120, 120, 0.75);
+  background-color: #DDDDDD;
   text-align: center;
   text-decoration: underline;
+  padding:5px;
 }
 
 #swimmer {
